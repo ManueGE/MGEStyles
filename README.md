@@ -85,7 +85,7 @@ The styles should be registered at application launch, so `application:didFinish
 The final step is to apply the styles. There is 2 ways to do it: 
 
 #### Using Interface Builder:
-When you use the default `MGEStyle` a new property appears in the attribute inspector in the interface builder. It is called **Mge Style**. Here you should provide the key of the registered style you want to apply:
+When you use the **Default** flavour, a new property appears in the attribute inspector in the interface builder. It is called **Mge Style**. Here you should provide the key of the registered style you want to apply:
 
 ![](https://github.com/ManueGE/MGEStyles/blob/master/readme_imgs/mgestyles_inspector.png?raw=true)
 
