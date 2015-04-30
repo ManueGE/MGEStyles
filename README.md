@@ -103,7 +103,7 @@ If are using the **Lite** flavour or your version of Xcode doesn't supoort **IBI
 You can also apply a no registered style:
 
 ````
-MGEStyle * baseStyle = [MGEStyle styleWithConfigurationBlock:^(UIButton *button) {
+MGEStyle * style = [MGEStyle styleWithConfigurationBlock:^(UIButton *button) {
         [button setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
         responder.numberOfLines = 0;
     }];
