@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '6.0'
   s.requires_arc = true
 
-  s.source_files = 'MGEStyles/MGEStyles/*'
+  s.source_files = 'MGEStyles/MGEStyles/**/*'
   s.resource_bundles = {
   }
 
