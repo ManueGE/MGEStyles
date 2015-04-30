@@ -15,12 +15,12 @@
     MGEStylesManager * manager = [MGEStylesManager sharedManager];
     
     //Create a parent label style
-    MGEStyle * parentStyle = [MGEStyle styleWithConfigurationBlock:^(UILabel *responder) {
+    MGEStyle * baseStyle = [MGEStyle styleWithConfigurationBlock:^(UILabel *responder) {
         responder.font = [UIFont boldSystemFontOfSize:56];
         responder.numberOfLines = 0;
     }];
     
-    MGEStyle * defaultStyle = [MGEStyle styleWithParent:parentStyle
+    MGEStyle * defaultStyle = [MGEStyle styleWithParent:baseStyle
                                           configuration:^(UILabel *label) {
                                               label.textColor = [UIColor redColor];
                                               label.textAlignment = NSTextAlignmentCenter;

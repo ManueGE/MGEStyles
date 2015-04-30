@@ -6,7 +6,6 @@
 //  Copyright (c) 2015 manuege. All rights reserved.
 //
 
-#define IS_IB_INSPECTABLE
 
 #import <UIKit/UIKit.h>
 
@@ -26,12 +25,15 @@
  */
 - (void) mge_applyRegisteredStyleWithKey:(NSString *) key;
 
-#ifdef IS_IB_INSPECTABLE
 /**
- This property is needed for the *IBInspectable* feature.
- It is always better to use the `mge_applyRegisteredStyleWithKey` instead of this one.
-*/
-@property (nonatomic) IBInspectable NSString *styleName;
-#endif
+ \return the current `MGEStyle` of the responder (if any)
+ */
+- (MGEStyle *) mge_style;
+
+/**
+ \return the registered name for the current `MGEStyle` of the responder (if any). 
+ It will return nil if the style were applied using `mge_applyStyle:`
+ */
+- (NSString *) mge_styleName;
 
 @end

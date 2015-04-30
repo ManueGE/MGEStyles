@@ -38,7 +38,6 @@
     }
     
     [self.label mge_applyRegisteredStyleWithKey:key];
-    NSLog(@"%@", self.label.styleName);
     
     sender.selected = !sender.selected;
     

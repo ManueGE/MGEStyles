@@ -11,9 +11,11 @@
 #import <objc/runtime.h>
 
 NSString const *StyleNameKey = @"com.manuege.uiresponderstylenamekey";
+NSString const *StyleKey = @"com.manuege.uiresponderstylekey";
 
 @implementation UIResponder (Styles)
 
+#pragma mark - apply styles
 - (void)mge_applyRegisteredStyleWithKey:(NSString *)key
 {
     MGEStyle *style = [[MGEStylesManager sharedManager] registeredStyleWithKey:key];
@@ -21,7 +23,7 @@ NSString const *StyleNameKey = @"com.manuege.uiresponderstylenamekey";
     NSAssert(style, @"There is not a registered style with the key: %@", key);
     
     [self mge_applyStyle:style];
-    objc_setAssociatedObject(self, &StyleNameKey, key, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+	[self mge_setStyleName:key];
 }
 
 - (void) mge_applyStyle:(MGEStyle *)style
@@ -33,19 +35,44 @@ NSString const *StyleNameKey = @"com.manuege.uiresponderstylenamekey";
     }
     
     style.configurationBlock(self);
-    objc_setAssociatedObject(self, &StyleNameKey, nil, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+	[self mge_setStyleName:nil];
+	[self mge_setStyle:style];
+	
 }
 
-- (void) setStyleName:(NSString *)styleName
+#pragma mark - getters and setters
+
+- (void) mge_setStyleName:(NSString *) styleName
 {
-    if (styleName.length > 0) {
-       [self mge_applyRegisteredStyleWithKey:styleName];
-    }
+	objc_setAssociatedObject(self, &StyleNameKey, styleName, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
-- (NSString *) styleName
+- (NSString *) mge_styleName
 {
-    return objc_getAssociatedObject(self, &StyleNameKey);
+	return objc_getAssociatedObject(self, &StyleNameKey);
+}
+
+- (void) mge_setStyle:(MGEStyle *) stlye
+{
+	objc_setAssociatedObject(self, &StyleKey, stlye, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+
+- (MGEStyle *) mge_style
+{
+	return objc_getAssociatedObject(self, &StyleKey);
+}
+
+#pragma mark - Interface builder methods
+- (void) setMgeStyle:(NSString *) styleName
+{
+	if (styleName.length > 0) {
+		[self mge_applyRegisteredStyleWithKey:styleName];
+	}
+}
+
+- (NSString *) mgeStyle
+{
+	return [self mge_styleName];
 }
 
 @end
