@@ -23,7 +23,7 @@
                                 <color key="textColor" red="0.99607843139999996" green="0.92156862750000001" blue="0.047058823530000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="mgeStyle" value="LabelTitleStyle"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="mgeStyle" value="DefaultText"/>
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fih-CF-t0X">
