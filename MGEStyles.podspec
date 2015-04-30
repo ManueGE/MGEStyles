@@ -1,12 +1,3 @@
-#
-# Be sure to run `pod lib lint ${POD_NAME}.podspec' to ensure this is a
-# valid spec and remove all comments before submitting the spec.
-#
-# Any lines starting with a # are optional, but encouraged
-#
-# To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
-#
-
 Pod::Spec.new do |s|
   s.name             = "MGEStyles"
   s.version          = "0.9.0"
@@ -30,4 +21,9 @@ Pod::Spec.new do |s|
 
   s.public_header_files = 'MGEStyles/MGEStyles/*.h'
   s.frameworks = 'UIKit'
+
+  s.subspec 'Lite' do |lite|
+    lite.source_files = 'MGEStyles/MGEStyles/*'
+  end
+
 end
