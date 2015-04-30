@@ -27,7 +27,7 @@ If you don't have CocoaPods installed or integrated into your project, you can l
 Import the library by doing `#import <MGEStyles/MGEStyles.h>`.
 
 ### Manually
-Clone or donwload the project and copy the contents of the **MGEStyles** folder into your project. Then, you can remove the **MGEStylesLite** folder if you prefer the Lite flavour.
+Clone or donwload the project and copy the contents of the **MGEStyles** folder into your project. Then, you can remove the **Inspectable** folder if you prefer the Lite flavour.
 
 
 ## Usage
