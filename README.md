@@ -1,15 +1,12 @@
 # MGEStyles
--------------------
 An easy way to set custom styles to any `UIResponder` from the Interface Builder.
 
 ## Summary
--------------------
 As an iOS developer, I feel very often frustrated with how difficult is to set consistent styles to my views in the Xcode Interface Builder. If you think in a `UILabel`, you can use the same style (font, color and size) for a set of labels in different `UIViewController`. If, some time later, the design changes you'll have to change the properties of all these labels one by one, which is a tedious work. I try to solve this issue by developing `MGEStyles`. This library, inspired by the android **styles** system, simplify this task, giving you the chance of define a totally custom styles in one single place and using it all over your project, using the Inerface Builder or by code. 
 
 **MGEStyles** is provided in two flavours, **Default** and **Lite**. The only difference is that the default version add an inspectable attribute in the interface builder, and lite version doesn't. For more details, please go to the [applying styles section](#applying_styles)
 
 ## Installation
--------------------
 ### Cocoapods
 Add the following to your `Podfile`:
 
@@ -34,7 +31,6 @@ Clone or donwload the project and copy the contents of the **MGEStyles** folder 
 
 
 ## Usage
--------------------
 
 The library works in 3 steps:
 
