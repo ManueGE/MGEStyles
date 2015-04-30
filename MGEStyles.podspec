@@ -15,15 +15,18 @@ Pod::Spec.new do |s|
   s.platform     = :ios,  '6.0'
   s.requires_arc = true
 
-  s.source_files = 'MGEStyles/MGEStyles/**/*'
+  s.default_subspec = 'Default'
   s.resource_bundles = {
   }
 
-  s.public_header_files = 'MGEStyles/MGEStyles/*.h'
+  s.public_header_files = 'MGEStyles/MGEStyles/Base/*.h'
   s.frameworks = 'UIKit'
 
-  s.subspec 'Lite' do |lite|
-    lite.source_files = 'MGEStyles/MGEStyles/MGEStylesLite/*'
+  s.subspec 'Default' do |default|
+    default.source_files = 'MGEStyles/MGEStyles/Base/*', 'MGEStyles/MGEStyles/Inspectable/*'
   end
 
+  s.subspec 'Lite' do |lite|
+    lite.source_files = 'MGEStyles/MGEStyles/Base/*'
+  end
 end

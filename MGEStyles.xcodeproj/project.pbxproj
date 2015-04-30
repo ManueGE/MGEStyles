@@ -14,10 +14,10 @@
 		326E70F21A87A80F00E1CAFD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 326E70F11A87A80F00E1CAFD /* Images.xcassets */; };
 		326E70F51A87A80F00E1CAFD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 326E70F31A87A80F00E1CAFD /* LaunchScreen.xib */; };
 		326E71011A87A80F00E1CAFD /* MGEStylesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 326E71001A87A80F00E1CAFD /* MGEStylesTests.m */; };
-		326E71101A87AA0300E1CAFD /* MGEStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 326E710F1A87AA0300E1CAFD /* MGEStyle.m */; };
-		326E71131A87AA1B00E1CAFD /* MGEStylesManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 326E71121A87AA1B00E1CAFD /* MGEStylesManager.m */; };
-		326E71161A87ADB300E1CAFD /* UIResponder+Styles.m in Sources */ = {isa = PBXBuildFile; fileRef = 326E71151A87ADB300E1CAFD /* UIResponder+Styles.m */; };
 		326E711A1A87BEF000E1CAFD /* StyleRegister.m in Sources */ = {isa = PBXBuildFile; fileRef = 326E71191A87BEEF00E1CAFD /* StyleRegister.m */; };
+		72EA947A1AF256DF005BBE93 /* MGEStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 72EA94741AF256DF005BBE93 /* MGEStyle.m */; };
+		72EA947B1AF256DF005BBE93 /* MGEStylesManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 72EA94771AF256DF005BBE93 /* MGEStylesManager.m */; };
+		72EA947C1AF256DF005BBE93 /* UIResponder+Styles.m in Sources */ = {isa = PBXBuildFile; fileRef = 72EA94791AF256DF005BBE93 /* UIResponder+Styles.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,16 +44,16 @@
 		326E70FA1A87A80F00E1CAFD /* MGEStylesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MGEStylesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		326E70FF1A87A80F00E1CAFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		326E71001A87A80F00E1CAFD /* MGEStylesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MGEStylesTests.m; sourceTree = "<group>"; };
-		326E710E1A87AA0300E1CAFD /* MGEStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGEStyle.h; sourceTree = "<group>"; };
-		326E710F1A87AA0300E1CAFD /* MGEStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGEStyle.m; sourceTree = "<group>"; };
-		326E71111A87AA1B00E1CAFD /* MGEStylesManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGEStylesManager.h; sourceTree = "<group>"; };
-		326E71121A87AA1B00E1CAFD /* MGEStylesManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGEStylesManager.m; sourceTree = "<group>"; };
-		326E71141A87ADB300E1CAFD /* UIResponder+Styles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIResponder+Styles.h"; sourceTree = "<group>"; };
-		326E71151A87ADB300E1CAFD /* UIResponder+Styles.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+Styles.m"; sourceTree = "<group>"; };
-		326E71171A87AE1000E1CAFD /* MGEStyles.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MGEStyles.h; sourceTree = "<group>"; };
 		326E71181A87BEEF00E1CAFD /* StyleRegister.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StyleRegister.h; sourceTree = "<group>"; };
 		326E71191A87BEEF00E1CAFD /* StyleRegister.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StyleRegister.m; sourceTree = "<group>"; };
-		72B78EA41AE68E820038D0A4 /* UIResponder+MGEStylesLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIResponder+MGEStylesLite.h"; sourceTree = "<group>"; };
+		72EA94731AF256DF005BBE93 /* MGEStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGEStyle.h; sourceTree = "<group>"; };
+		72EA94741AF256DF005BBE93 /* MGEStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGEStyle.m; sourceTree = "<group>"; };
+		72EA94751AF256DF005BBE93 /* MGEStyles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGEStyles.h; sourceTree = "<group>"; };
+		72EA94761AF256DF005BBE93 /* MGEStylesManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGEStylesManager.h; sourceTree = "<group>"; };
+		72EA94771AF256DF005BBE93 /* MGEStylesManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGEStylesManager.m; sourceTree = "<group>"; };
+		72EA94781AF256DF005BBE93 /* UIResponder+Styles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIResponder+Styles.h"; sourceTree = "<group>"; };
+		72EA94791AF256DF005BBE93 /* UIResponder+Styles.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+Styles.m"; sourceTree = "<group>"; };
+		72EA947E1AF256F9005BBE93 /* UIResponder+MGEStylesInspectable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIResponder+MGEStylesInspectable.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,24 +139,32 @@
 		326E710A1A87A86100E1CAFD /* MGEStyles */ = {
 			isa = PBXGroup;
 			children = (
-				326E71171A87AE1000E1CAFD /* MGEStyles.h */,
-				326E71111A87AA1B00E1CAFD /* MGEStylesManager.h */,
-				326E71121A87AA1B00E1CAFD /* MGEStylesManager.m */,
-				326E710E1A87AA0300E1CAFD /* MGEStyle.h */,
-				326E710F1A87AA0300E1CAFD /* MGEStyle.m */,
-				326E71141A87ADB300E1CAFD /* UIResponder+Styles.h */,
-				326E71151A87ADB300E1CAFD /* UIResponder+Styles.m */,
-				72B78EA31AE68E780038D0A4 /* MGEStylesLite */,
+				72EA94721AF256DF005BBE93 /* Base */,
+				72EA947D1AF256F9005BBE93 /* Inspectable */,
 			);
 			path = MGEStyles;
 			sourceTree = "<group>";
 		};
-		72B78EA31AE68E780038D0A4 /* MGEStylesLite */ = {
+		72EA94721AF256DF005BBE93 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				72B78EA41AE68E820038D0A4 /* UIResponder+MGEStylesLite.h */,
+				72EA94731AF256DF005BBE93 /* MGEStyle.h */,
+				72EA94741AF256DF005BBE93 /* MGEStyle.m */,
+				72EA94751AF256DF005BBE93 /* MGEStyles.h */,
+				72EA94761AF256DF005BBE93 /* MGEStylesManager.h */,
+				72EA94771AF256DF005BBE93 /* MGEStylesManager.m */,
+				72EA94781AF256DF005BBE93 /* UIResponder+Styles.h */,
+				72EA94791AF256DF005BBE93 /* UIResponder+Styles.m */,
 			);
-			path = MGEStylesLite;
+			path = Base;
+			sourceTree = "<group>";
+		};
+		72EA947D1AF256F9005BBE93 /* Inspectable */ = {
+			isa = PBXGroup;
+			children = (
+				72EA947E1AF256F9005BBE93 /* UIResponder+MGEStylesInspectable.h */,
+			);
+			path = Inspectable;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,13 +267,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72EA947C1AF256DF005BBE93 /* UIResponder+Styles.m in Sources */,
 				326E70ED1A87A80F00E1CAFD /* ViewController.m in Sources */,
 				326E70EA1A87A80F00E1CAFD /* AppDelegate.m in Sources */,
-				326E71101A87AA0300E1CAFD /* MGEStyle.m in Sources */,
+				72EA947A1AF256DF005BBE93 /* MGEStyle.m in Sources */,
 				326E711A1A87BEF000E1CAFD /* StyleRegister.m in Sources */,
 				326E70E71A87A80F00E1CAFD /* main.m in Sources */,
-				326E71131A87AA1B00E1CAFD /* MGEStylesManager.m in Sources */,
-				326E71161A87ADB300E1CAFD /* UIResponder+Styles.m in Sources */,
+				72EA947B1AF256DF005BBE93 /* MGEStylesManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
