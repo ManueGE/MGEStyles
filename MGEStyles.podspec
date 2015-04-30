@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => "https://github.com/ManueGE/MGEStyles.git", :tag => "1.0.0" }
   s.social_media_url = 'https://twitter.com/ManueGE'
 
-  s.platform     = :ios,  '7.0'
+  s.platform     = :ios,  '6.0'
   s.requires_arc = true
 
   s.source_files = 'MGEStyles/MGEStyles/**/*'
@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
   s.frameworks = 'UIKit'
 
   s.subspec 'Lite' do |lite|
-    lite.source_files = 'MGEStyles/MGEStyles/*'
+    lite.source_files = 'MGEStyles/MGEStyles/MGEStylesLite/*'
   end
 
 end
