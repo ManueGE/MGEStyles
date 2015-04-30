@@ -83,9 +83,19 @@ MGEStylesManager * manager = [MGEStylesManager sharedManager];
 
 The styles should be registered at application launch, so `application:didFinishLaunchingWithOptions:` might seems a good place to do it. Anyway, in order to keep the **AppDelegate** as clean as possible, creating a helper class to create and register all the styles and call this class from the AppDelegate is strongly recommended. 
 
+<a name="flavours"></a>
 ### Applying Styles: 
 
 The final step is to apply the styles. There is 2 ways to do it: 
+
+#### Using Interface Builder:
+When you use the default `MGEStyle` a new property appears in the attribute inspector in the interface builder. It is called **Mge Style**. Here you should provide the key of the registered style you want to apply:
+
+![](https://github.com/ManueGE/MGEStyles/blob/master/readme_imgs/mgestyles_inspector.png?raw=true)
+
+If are using the **Lite** flavour or your version of Xcode doesn't supoort **IBInspectables** you can achieve the same result this way:
+
+![](https://github.com/ManueGE/MGEStyles/blob/master/readme_imgs/mgestyles_manually.png?raw=true)
 
 #### By Code:
 `MGEStyles` provides a category which allow apply a style to any `UIResponder`. If you want to apply the "LabelTitleStyle" to a label, you can do it by typing:
@@ -104,16 +114,6 @@ MGEStyle * baseStyle = [MGEStyle styleWithConfigurationBlock:^(UIButton *button)
     
 [button mge_applyStyle:style];
 ```` 
-
-#### Using Interface Builder:
-<a name="flavours"></a>
-When you use the default `MGEStyle` a new property appears in the attribute inspector in the interface builder. It is called **Mge Style**. Here you should provide the key of the registered style you want to apply:
-
-![](https://github.com/ManueGE/MGEStyles/blob/master/readme_imgs/mgestyles_inspector.png?raw=true)
-
-If are using the **Lite** flavour or your version of Xcode doesn't supoort **IBInspectables** you can achieve the same result this way:
-
-![](https://github.com/ManueGE/MGEStyles/blob/master/readme_imgs/mgestyles_manually.png?raw=true)
 
 ## Contact  
 [@ManueGE](https://twitter.com/ManueGE)
