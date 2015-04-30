@@ -53,7 +53,7 @@
 		326E71171A87AE1000E1CAFD /* MGEStyles.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MGEStyles.h; sourceTree = "<group>"; };
 		326E71181A87BEEF00E1CAFD /* StyleRegister.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StyleRegister.h; sourceTree = "<group>"; };
 		326E71191A87BEEF00E1CAFD /* StyleRegister.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StyleRegister.m; sourceTree = "<group>"; };
-		72B78EA41AE68E820038D0A4 /* UIResponder+StylesPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIResponder+StylesPrivate.h"; sourceTree = "<group>"; };
+		72B78EA41AE68E820038D0A4 /* UIResponder+MGEStylesLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIResponder+MGEStylesLite.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,17 +146,17 @@
 				326E710F1A87AA0300E1CAFD /* MGEStyle.m */,
 				326E71141A87ADB300E1CAFD /* UIResponder+Styles.h */,
 				326E71151A87ADB300E1CAFD /* UIResponder+Styles.m */,
-				72B78EA31AE68E780038D0A4 /* private */,
+				72B78EA31AE68E780038D0A4 /* MGEStylesLite */,
 			);
 			path = MGEStyles;
 			sourceTree = "<group>";
 		};
-		72B78EA31AE68E780038D0A4 /* private */ = {
+		72B78EA31AE68E780038D0A4 /* MGEStylesLite */ = {
 			isa = PBXGroup;
 			children = (
-				72B78EA41AE68E820038D0A4 /* UIResponder+StylesPrivate.h */,
+				72B78EA41AE68E820038D0A4 /* UIResponder+MGEStylesLite.h */,
 			);
-			path = private;
+			path = MGEStylesLite;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

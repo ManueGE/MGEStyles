@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 
-@interface UIResponder (StylesPrivate)
+@interface UIResponder (MGEStylesLite)
 /**
  This property is needed for the *IBInspectable* feature, but shouldn't be called directly.
  It is always better to use the `mge_applyRegisteredStyleWithKey` instead of this one.

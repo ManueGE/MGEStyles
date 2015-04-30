@@ -6,6 +6,8 @@ An easy way to set custom styles to any `UIResponder` from the Interface Builder
 -------------------
 As an iOS developer, I feel very often frustrated with how difficult is to set consistent styles to my views in the Xcode Interface Builder. If you think in a `UILabel`, you can use the same style (font, color and size) for a set of labels in different `UIViewController`. If, some time later, the design changes you'll have to change the properties of all these labels one by one, which is a tedious work. I try to solve this issue by developing `MGEStyles`. This library, inspired by the android **styles** system, simplify this task, giving you the chance of define a totally custom styles in one single place and using it all over your project, using the Inerface Builder or by code. 
 
+**MGEStyles^** is provided in two flavours, **Default** and **Lite**. The only difference is that the default version add an inspectable attribute in the interface builder, and lite version doesn't. For more details, please go to the [applying styles section](#flavours)
+
 ## Installation
 -------------------
 ### Cocoapods
@@ -15,6 +17,12 @@ Add the following to your `Podfile`:
 pod 'MGEStyles'
 ```
 
+or if you prefer the **Lite** flavour:
+
+```
+pod 'MGEStyles/Lite'
+```
+
 Then run `$ pod install`.
 
 If you don't have CocoaPods installed or integrated into your project, you can learn how to do so [here](http://cocoapods.org).
@@ -22,7 +30,8 @@ If you don't have CocoaPods installed or integrated into your project, you can l
 Import the library by doing `#import <MGEStyles/MGEStyles.h>`.
 
 ### Manually
-Clone or donwload the project and copy the contents of the **MGEStyles** folder into your project. 
+Clone or donwload the project and copy the contents of the **MGEStyles** folder into your project. Then, you can remove the **MGEStylesLite** folder if you prefer the Lite flavour.
+
 
 ## Usage
 -------------------
@@ -97,12 +106,12 @@ MGEStyle * baseStyle = [MGEStyle styleWithConfigurationBlock:^(UIButton *button)
 ```` 
 
 #### Using Interface Builder:
-
-When you use `MGEStyle` a new property appears in the attribute inspector in the interface builder. It is called **Mge Style**. Here you should provide the key of the registered style you want to apply:
+<a name="flavours"></a>
+When you use the default `MGEStyle` a new property appears in the attribute inspector in the interface builder. It is called **Mge Style**. Here you should provide the key of the registered style you want to apply:
 
 ![](https://github.com/ManueGE/MGEStyles/blob/master/readme_imgs/mgestyles_inspector.png?raw=true)
 
-If your version of Xcode doesn't supoort **IBInspectables** you can achive the same result this way:
+If are using the **Lite** flavour or your version of Xcode doesn't supoort **IBInspectables** you can achieve the same result this way:
 
 ![](https://github.com/ManueGE/MGEStyles/blob/master/readme_imgs/mgestyles_manually.png?raw=true)
 
@@ -110,7 +119,7 @@ If your version of Xcode doesn't supoort **IBInspectables** you can achive the s
 [@ManueGE](https://twitter.com/ManueGE)
 
 ## License
-Groot is available under the Apache License. See [LICENSE](https://github.com/ManueGE/MGEStyles/blob/master/LICENSE).
+MGEStyles is available under the Apache License. See [LICENSE](https://github.com/ManueGE/MGEStyles/blob/master/LICENSE).
 
 
 
