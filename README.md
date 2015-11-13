@@ -74,7 +74,7 @@ For example, if we want to register the defined **titleStyle** we'll do:
 
 ````
 MGEStylesManager * manager = [MGEStylesManager sharedManager];
-[manager registerStyle:childStyle withKey:@"LabelTitleStyle"];
+[manager registerStyle:titleStyle withKey:@"LabelTitleStyle"];
 ````
 
 The styles should be registered at application launch, so `application:didFinishLaunchingWithOptions:` might seems a good place to do it. Anyway, in order to keep the **AppDelegate** as clean as possible, creating a helper class to create and register all the styles and call this class from the AppDelegate is strongly recommended. 
@@ -94,10 +94,10 @@ If are using the **Lite** flavour or your version of Xcode doesn't supoort **IBI
 ![](https://github.com/ManueGE/MGEStyles/blob/master/readme_imgs/mgestyles_manually.png?raw=true)
 
 #### By Code:
-`MGEStyles` provides a category which allow apply a style to any `UIResponder`. If you want to apply the "LabelTitleStyle" to a label, you can do it by typing:
+`MGEStyles` provides a category which allow apply a style to any `UIResponder`. If you want to apply the **LabelTitleStyle** to a label, you can do it by typing:
 
 ````
-[mge_applyRegisteredStyleWithKey:key];
+[label mge_applyRegisteredStyleWithKey:key];
 ````
 
 You can also apply a no registered style:
